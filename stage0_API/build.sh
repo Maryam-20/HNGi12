@@ -1,6 +1,8 @@
 ECHO is on.
 #!/usr/bin/env bash
 # Exit on error
+chmod +x build.sh
+
 set -o errexit
 
 # Upgrade pip, setuptools, and wheel
