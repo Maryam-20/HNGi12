@@ -11,3 +11,5 @@ pip install -r requirements.txt
 
 # Run database migrations
 python manage.py migrate --noinput
+
+echo "Build complete!"
