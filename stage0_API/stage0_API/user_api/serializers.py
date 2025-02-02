@@ -1,7 +1,7 @@
 from dataclasses import fields
 from turtle import mode
 from  rest_framework import serializers
-from .models import User_details
+from stage0_API.user_api.models import User_details
 
 
 class User_detailSerializer(serializers.ModelSerializer):

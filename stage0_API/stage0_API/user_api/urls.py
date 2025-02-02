@@ -1,5 +1,5 @@
 from rest_framework.routers import DefaultRouter
-from .views import User_detailsView
+from stage0_API.user_api.views import User_detailsView
 
 from django.urls import path, include
 

@@ -5,8 +5,8 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.decorators import action
 from django.shortcuts import get_object_or_404
-from .models import User_details
-from .serializers import User_detailSerializer
+from stage0_API.user_api.models import User_details
+from stage0_API.user_api.serializers import User_detailSerializer
 # from stage0Task.stage0_API.stage0_API.user_api import serializers
 
 
