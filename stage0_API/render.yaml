@@ -1,10 +1,16 @@
 services:
-  - name: stage0_API
-    type: web
+  - type: web
+    name: stage0_API
     env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn stage0_API.wsgi:application"
-    rootDirectory: ""  # Leave empty to use the default root directory
+    plan: free
+    # buildCommand: |
+    #   pip install -r requirements.txt
+    #   python manage.py migrate
+    #   python manage.py collectstatic --noinput
+    buildCommand: "./opt/render/project/src/manage.py migrate"
+    startCommand: gunicorn stage0_API.wsgi:application
+
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: "stage0_API.settings"
+

@@ -39,6 +39,7 @@ import os
 from django.core.wsgi import get_wsgi_application
 
 # Set the correct settings module
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 os.environ.setdefault('DJANGO_SETTINGS_MODULE','stage0_API.settings')
 
 application = get_wsgi_application()
