@@ -92,7 +92,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'stage0_API.stage0_API.wsgi.application'
+WSGI_APPLICATION = 'stage0_API.wsgi.application'
 
 
 # Database
