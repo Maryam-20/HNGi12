@@ -1,0 +1,11 @@
+name: stage0_API
+type: web
+region: frankfurt
+routes:
+  - src: /
+    dest: /
+build:
+  type: docker
+  dockerfile: Dockerfile
+run:
+  command: gunicorn stage0_API.wsgi:application --bind 0.0.0.0:5000
