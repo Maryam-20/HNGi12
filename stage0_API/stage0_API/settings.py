@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     # Third party App
-    'stage0_API.user_api',
+    'stage0_API.stage0_API.user_api',
 ]
 
 MIDDLEWARE = [
