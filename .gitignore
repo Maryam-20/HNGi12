@@ -1,0 +1,10 @@
+ECHO is on.
+.env
+.gitignore/
+.venv/
+*.pyc
+__pycache__/
+*.log
+*.sqlite3
+.vscode/
+
