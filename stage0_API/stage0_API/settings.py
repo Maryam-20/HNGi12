@@ -61,7 +61,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
-CSRF_TRUSTED_ORIGINS = ['http://localhost:8000']
+# CSRF_TRUSTED_ORIGINS = ['http://localhost:8000']
 
 ROOT_URLCONF = 'stage0_API.urls'
 
@@ -92,7 +92,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'stage0_API.stage0_API.wsgi.application'
+WSGI_APPLICATION = 'stage0_API.wsgi.application'
 
 
 # Database
