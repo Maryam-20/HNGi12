@@ -11,18 +11,17 @@ The GitHub URL of the project's codebase.
 
 ** API Endpoint**
 
-GET(http://127.0.0.1:8000/user_details/)
+GET(https://hngi12-2025.onrender.com)
 
 This endpoint returns JSON data with the following structure:
 
 **Response Example**
 {
-  "id": "#",
-  "objects_id": null,
-  "content_type": null,
-  "email_address": "name@gmail.com",
-  "created_at": "2025-02-01T21:59:17.512390Z",
-  "github_url": "https://github.com/username"
+  {
+    "email": "maryamanileleye@gmail.com",
+    "github_url": "https://github.com/Maryam-20/HNGi12",
+    "current_datetime": "2025-02-04T21:27:14Z"
+}
 }
 
 **Installation & Setup**
@@ -46,7 +45,7 @@ Follow these steps to set up and run the project locally.
 5-  Start the Development Server
         python manage.py runserver
 6-  Test the API
-        URL: http://127.0.0.1:8000/user_details/
+        URL: http://127.0.0.1:8000
         
 **Technologies Used**
 Python
